@@ -12,9 +12,16 @@ namespace MyContacts.Forms
 {
     public partial class ContactDetails : Form
     {
+       
+
         public ContactDetails()
         {
             InitializeComponent();
+        }
+
+        private void ContactDetails_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

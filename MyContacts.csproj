@@ -63,6 +63,7 @@
     <Compile Include="Forms\ContactDetails.Designer.cs">
       <DependentUpon>ContactDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Contacts.cs" />
     <Compile Include="Forms\InfoForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -48,6 +48,7 @@ namespace MyContacts
             this.btn_AllContact.TabIndex = 0;
             this.btn_AllContact.Text = "All Contacts";
             this.btn_AllContact.UseVisualStyleBackColor = true;
+            this.btn_AllContact.Click += new System.EventHandler(this.btn_AllContact_Click);
             // 
             // btn_SearchContact
             // 
@@ -57,6 +58,7 @@ namespace MyContacts
             this.btn_SearchContact.TabIndex = 1;
             this.btn_SearchContact.Text = "Search Contact";
             this.btn_SearchContact.UseVisualStyleBackColor = true;
+            this.btn_SearchContact.Click += new System.EventHandler(this.btn_SearchContact_Click);
             // 
             // btn_NewContact
             // 
@@ -66,6 +68,7 @@ namespace MyContacts
             this.btn_NewContact.TabIndex = 2;
             this.btn_NewContact.Text = "New Contact";
             this.btn_NewContact.UseVisualStyleBackColor = true;
+            this.btn_NewContact.Click += new System.EventHandler(this.btn_NewContact_Click);
             // 
             // btn_Setting
             // 
@@ -75,6 +78,7 @@ namespace MyContacts
             this.btn_Setting.TabIndex = 3;
             this.btn_Setting.Text = "Settings";
             this.btn_Setting.UseVisualStyleBackColor = true;
+            this.btn_Setting.Click += new System.EventHandler(this.btn_Setting_Click);
             // 
             // btn_Info
             // 
@@ -84,6 +88,7 @@ namespace MyContacts
             this.btn_Info.TabIndex = 4;
             this.btn_Info.Text = "Info";
             this.btn_Info.UseVisualStyleBackColor = true;
+            this.btn_Info.Click += new System.EventHandler(this.btn_Info_Click);
             // 
             // MainPanel
             // 

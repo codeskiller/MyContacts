@@ -263,6 +263,7 @@ namespace MyContacts
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "Add Contact";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // AddNewContactForm
             // 

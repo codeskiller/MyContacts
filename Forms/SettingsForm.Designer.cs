@@ -1,7 +1,7 @@
 ﻿
 namespace MyContacts
 {
-    partial class Settings
+    partial class SettingsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -140,7 +140,7 @@ namespace MyContacts
             this.btnUpdate.Text = "Update Settings";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // Settings
+            // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -157,7 +157,7 @@ namespace MyContacts
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbContactBookSettings);
-            this.Name = "Settings";
+            this.Name = "SettingsForm";
             this.Text = "Settings";
             this.ResumeLayout(false);
             this.PerformLayout();

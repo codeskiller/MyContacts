@@ -32,7 +32,6 @@ namespace MyContacts.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tbName = new System.Windows.Forms.TextBox();
             this.tbLinked = new System.Windows.Forms.TextBox();
             this.tbTwitter = new System.Windows.Forms.TextBox();
             this.tbFacebook = new System.Windows.Forms.TextBox();
@@ -42,6 +41,7 @@ namespace MyContacts.Forms
             this.tbWebsite = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbHomePhone = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.lbAddress = new System.Windows.Forms.Label();
             this.lbLinked = new System.Windows.Forms.Label();
             this.lbTwitter = new System.Windows.Forms.Label();
@@ -104,13 +104,6 @@ namespace MyContacts.Forms
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(577, 365);
             this.tableLayoutPanel1.TabIndex = 33;
-            // 
-            // tbName
-            // 
-            this.tbName.Location = new System.Drawing.Point(3, 3);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(562, 20);
-            this.tbName.TabIndex = 10;
             // 
             // tbLinked
             // 
@@ -175,6 +168,13 @@ namespace MyContacts.Forms
             this.tbHomePhone.Name = "tbHomePhone";
             this.tbHomePhone.Size = new System.Drawing.Size(562, 20);
             this.tbHomePhone.TabIndex = 13;
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(3, 3);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(562, 20);
+            this.tbName.TabIndex = 10;
             // 
             // lbAddress
             // 
@@ -306,7 +306,8 @@ namespace MyContacts.Forms
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "ContactDetails";
-            this.Text = "ContactDetails";
+            this.Text = "Contact Details";
+            this.Load += new System.EventHandler(this.ContactDetails_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

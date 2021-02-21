@@ -29,18 +29,18 @@ namespace MyContacts
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewAllContact = new System.Windows.Forms.DataGridView();
             this.lbAllContacts = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllContact)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewAllContact
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(750, 389);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewAllContact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAllContact.Location = new System.Drawing.Point(21, 49);
+            this.dataGridViewAllContact.Name = "dataGridViewAllContact";
+            this.dataGridViewAllContact.Size = new System.Drawing.Size(750, 389);
+            this.dataGridViewAllContact.TabIndex = 0;
             // 
             // lbAllContacts
             // 
@@ -59,10 +59,10 @@ namespace MyContacts
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbAllContacts);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewAllContact);
             this.Name = "AllContactForm";
             this.Text = "AllContactForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllContact)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,7 +70,7 @@ namespace MyContacts
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewAllContact;
         private System.Windows.Forms.Label lbAllContacts;
     }
 }
