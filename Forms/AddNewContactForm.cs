@@ -25,7 +25,7 @@ namespace MyContacts
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FileStream fs = new FileStream("C:\\Users\\Family\\source\\repos\\MyContacts\\Contacts.xml", FileMode.Create, FileAccess.Write);
+            FileStream fs = new FileStream("Contacts.xml", FileMode.Create, FileAccess.Write);
             Forms.Contacts newContact = new Forms.Contacts();
             newContact.Name = tbName.Text;
             newContact.NickName = tbNickName.Text;
@@ -50,6 +50,5 @@ namespace MyContacts
             }
         
         }
-
     }
 }

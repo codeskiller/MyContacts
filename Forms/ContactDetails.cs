@@ -18,8 +18,12 @@ namespace MyContacts.Forms
         {
             InitializeComponent();
         }
+        public ContactDetails(string Name, string NickName, string Address, string cellPhone, string HomePhone, string Website, string Facebook, string Twitter, string LinkedIn )
+        {
 
-        private void ContactDetails_Load(object sender, EventArgs e)
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
 
         }
