@@ -27,11 +27,11 @@ namespace MyContacts
                     ds.ReadXml("Contacts.xml");
                     dataGridViewAllContact.DataSource = ds.Tables["Contacts"];
                     
-                    dataGridViewAllContact.Columns["NickName"].Visible = false;
-                    dataGridViewAllContact.Columns["Website"].Visible = false;
-                    dataGridViewAllContact.Columns["Facebook"].Visible = false;
-                    dataGridViewAllContact.Columns["LinkedIn"].Visible = false;
-                    dataGridViewAllContact.Columns["Twitter"].Visible = false;
+                    //dataGridViewAllContact.Columns["NickName"].Visible = false;
+                    //dataGridViewAllContact.Columns["Website"].Visible = false;
+                    //dataGridViewAllContact.Columns["Facebook"].Visible = false;
+                   // dataGridViewAllContact.Columns["LinkedIn"].Visible = false;
+                   // dataGridViewAllContact.Columns["Twitter"].Visible = false;
                 }
                 catch (Exception ex)
                 {
