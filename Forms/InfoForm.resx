@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>Contact Book is a desktop application where you can create and save records of your contacts. In addition to basic contact details you can also save other details such as nick name, email, website, social media link.</value>
+    <value>Contact Book is a desktop application where you can create and save records of your contacts. In addition to basic contact details, you can also save other details such as a nickname, email, website, social media link.</value>
   </data>
 </root>

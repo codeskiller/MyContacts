@@ -59,7 +59,7 @@ namespace MyContacts.Forms
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(689, 26);
+            this.label2.Size = new System.Drawing.Size(692, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -85,9 +85,9 @@ namespace MyContacts.Forms
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(692, 26);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Contact Book is developed and designed to be light weight. it useds SQL Server da" +
-    "tabase to store contact records. You can also enable account base access for sec" +
-    "urity reasons from the settings menu.";
+            this.label3.Text = "Contact Book is developed and designed to be lightweight. it uses XML files to st" +
+    "ore contact records. You can also enable account base access for security reason" +
+    "s from the settings menu.";
             // 
             // label4
             // 
