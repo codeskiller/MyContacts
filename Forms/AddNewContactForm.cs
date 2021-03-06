@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace MyContacts
@@ -19,29 +20,65 @@ namespace MyContacts
         public AddNewContactForm()
         {
             InitializeComponent();
-            ls = new List<Forms.Contacts>();
-            xs = new XmlSerializer(typeof(List<Forms.Contacts>));
+            CreateXMLFile();
+        }
+        static void CreateXMLFile()
+        {
+            if (!File.Exists("Contacts.xml"))
+            {
+                XmlDocument doc = new XmlDocument();
+                XmlElement root = doc.CreateElement("Contacts");
+                doc.AppendChild(root);
+                doc.Save("Contacts.xml");
+            }        
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
-        {
-            FileStream fs = new FileStream("C:\\Users\\Family\\source\\repos\\MyContacts\\Contacts.xml", FileMode.Create, FileAccess.Write);
-            Forms.Contacts newContact = new Forms.Contacts();
-            newContact.Name = tbName.Text;
-            newContact.NickName = tbNickName.Text;
-            newContact.Address = tbAddress.Text;
-            newContact.CellPhone = tbCellPhone.Text;
-            newContact.HomePhone = tbHomePhone.Text;
-            newContact.Email = tbEmail.Text;
-            newContact.Website = tbWebsite.Text;
-            newContact.Facebook = tbFacebook.Text;
-            newContact.Twitter = tbFacebook.Text;
-            newContact.Linkedin = tbLinked.Text;
+        {           
             try
             {
-                ls.Add(newContact);
-                xs.Serialize(fs, ls);
-                fs.Close();
+
+                XmlDocument doc = new XmlDocument();
+                doc.Load("Contacts.xml");
+                XmlNode root = doc.SelectSingleNode("Contacts");
+                XmlElement contacts = doc.CreateElement(tbName.Text);
+                root.AppendChild(contacts);
+
+                XmlAttribute id = doc.CreateAttribute("id");
+                id.Value = doc.SelectNodes("//Contacts/" + tbName.Text).Count.ToString();
+                contacts.Attributes.Append(id);
+
+                XmlElement name = doc.CreateElement("Name");
+                XmlElement nickName = doc.CreateElement("NickName");
+                XmlElement cellPhone = doc.CreateElement("CellPhone");
+                XmlElement homePhone = doc.CreateElement("HomePhone");
+                XmlElement email = doc.CreateElement("Email");
+                XmlElement address = doc.CreateElement("Address");
+                XmlElement website = doc.CreateElement("Website");
+                XmlElement facebook = doc.CreateElement("Facebook");
+                XmlElement twitter = doc.CreateElement("Twitter");
+                XmlElement linkedIn = doc.CreateElement("LinkedIn");
+                contacts.AppendChild(name);
+                contacts.AppendChild(nickName);
+                contacts.AppendChild(cellPhone);
+                contacts.AppendChild(homePhone);
+                contacts.AppendChild(address);
+                contacts.AppendChild(website);
+                contacts.AppendChild(facebook);
+                contacts.AppendChild(twitter);
+                contacts.AppendChild(linkedIn);
+
+                name.InnerText = tbName.Text;
+                nickName.InnerText = tbNickName.Text;
+                address.InnerText = tbAddress.Text;
+                cellPhone.InnerText = tbCellPhone.Text;
+                homePhone.InnerText = tbHomePhone.Text;
+                email.InnerText = tbEmail.Text;
+                website.InnerText = tbWebsite.Text;
+                facebook.InnerText = tbFacebook.Text;
+                twitter.InnerText = tbFacebook.Text;
+                linkedIn.InnerText = tbLinked.Text;
+                doc.Save("Contacts.xml");
                 MessageBox.Show("Contact details are added !");
             }
             catch (Exception ex)
@@ -50,6 +87,5 @@ namespace MyContacts
             }
         
         }
-
     }
 }

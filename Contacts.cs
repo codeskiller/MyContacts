@@ -8,7 +8,7 @@ namespace MyContacts.Forms
 {
     public class Contacts
     {
-        public string Name { get; set; }
+            public string Name { get; set; }
         public string NickName { get; set; }
         public string Address { get; set; }
         public string CellPhone { get; set; }
@@ -18,5 +18,7 @@ namespace MyContacts.Forms
         public string Facebook { get; set; }
         public string Twitter { get; set; }
         public string Linkedin { get; set; }
+       
+        
     }
 }
