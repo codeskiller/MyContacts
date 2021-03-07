@@ -24,6 +24,7 @@ namespace MyContacts
         }
         static void CreateXMLFile()
         {
+            //create xml file if it doesn't exis
             if (!File.Exists("Contacts.xml"))
             {
                 XmlDocument doc = new XmlDocument();
@@ -34,35 +35,32 @@ namespace MyContacts
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
-        {           
+        {   
+            //load xml file and create element
             try
             {
-
                 XmlDocument doc = new XmlDocument();
                 doc.Load("Contacts.xml");
                 XmlNode root = doc.SelectSingleNode("Contacts");
-                XmlElement contacts = doc.CreateElement(tbName.Text);
+                XmlElement contacts = doc.CreateElement("Table");
                 root.AppendChild(contacts);
-
-                XmlAttribute id = doc.CreateAttribute("id");
-                id.Value = doc.SelectNodes("//Contacts/" + tbName.Text).Count.ToString();
-                contacts.Attributes.Append(id);
 
                 XmlElement name = doc.CreateElement("Name");
                 XmlElement nickName = doc.CreateElement("NickName");
+                XmlElement address = doc.CreateElement("Address");
                 XmlElement cellPhone = doc.CreateElement("CellPhone");
                 XmlElement homePhone = doc.CreateElement("HomePhone");
-                XmlElement email = doc.CreateElement("Email");
-                XmlElement address = doc.CreateElement("Address");
+                XmlElement email = doc.CreateElement("Email");             
                 XmlElement website = doc.CreateElement("Website");
                 XmlElement facebook = doc.CreateElement("Facebook");
                 XmlElement twitter = doc.CreateElement("Twitter");
                 XmlElement linkedIn = doc.CreateElement("LinkedIn");
                 contacts.AppendChild(name);
                 contacts.AppendChild(nickName);
+                contacts.AppendChild(address);
                 contacts.AppendChild(cellPhone);
                 contacts.AppendChild(homePhone);
-                contacts.AppendChild(address);
+                contacts.AppendChild(email);
                 contacts.AppendChild(website);
                 contacts.AppendChild(facebook);
                 contacts.AppendChild(twitter);

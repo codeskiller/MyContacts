@@ -42,21 +42,29 @@ namespace MyContacts
             // 
             // btn_AllContact
             // 
+            this.btn_AllContact.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AllContact.FlatAppearance.BorderSize = 0;
+            this.btn_AllContact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AllContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AllContact.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_AllContact.Location = new System.Drawing.Point(34, 99);
             this.btn_AllContact.Name = "btn_AllContact";
             this.btn_AllContact.Size = new System.Drawing.Size(85, 49);
             this.btn_AllContact.TabIndex = 0;
             this.btn_AllContact.Text = "All Contacts";
-            this.btn_AllContact.UseVisualStyleBackColor = true;
+            this.btn_AllContact.UseVisualStyleBackColor = false;
             this.btn_AllContact.Click += new System.EventHandler(this.btn_AllContact_Click);
             // 
             // btn_SearchContact
             // 
-            this.btn_SearchContact.Location = new System.Drawing.Point(34, 187);
+            this.btn_SearchContact.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_SearchContact.Location = new System.Drawing.Point(32, 175);
             this.btn_SearchContact.Name = "btn_SearchContact";
-            this.btn_SearchContact.Size = new System.Drawing.Size(99, 37);
+            this.btn_SearchContact.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_SearchContact.Size = new System.Drawing.Size(112, 50);
             this.btn_SearchContact.TabIndex = 1;
             this.btn_SearchContact.Text = "Search Contact";
+            this.btn_SearchContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_SearchContact.UseVisualStyleBackColor = true;
             this.btn_SearchContact.Click += new System.EventHandler(this.btn_SearchContact_Click);
             // 
@@ -100,7 +108,7 @@ namespace MyContacts
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel2.Controls.Add(this.lb_ContactBook);
             this.panel2.Controls.Add(this.btn_AllContact);
             this.panel2.Controls.Add(this.btn_SearchContact);

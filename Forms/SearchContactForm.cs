@@ -35,57 +35,51 @@ namespace MyContacts
                 string twitter = string.Empty;
                 string linkedIn = string.Empty;
 
-                string xmlFile = File.ReadAllText("Contacts.xml");
-                XmlDocument xmldoc = new XmlDocument();
-                xmldoc.LoadXml(xmlFile);
-                XmlNodeList nodeList = xmldoc.GetElementsByTagName("Name");
-              
-                foreach (XmlNode node in nodeList)
+                XmlDocument doc = new XmlDocument();
+                doc.Load("Contacts.xml");
+                XmlElement root = doc.DocumentElement;
+                XmlNodeList names = root.SelectNodes("//Contacts/Table");
+                foreach (XmlNode node in names)
                 {
-                    name = node.InnerText;
-                    if (name == tbName.Text)
+
+                    if (tbName.Text != null && node.SelectSingleNode("Name").InnerText == tbName.Text)
                     {
                         nameExist = true;
-                         nickName = string.Empty;
-                         address = string.Empty;
-                         cellPhone = string.Empty;
-                         homePhone = string.Empty;
-                         website = string.Empty;
-                         facebook = string.Empty;
-                         twitter = string.Empty;
-                         linkedIn = string.Empty;
+                        tbResult.Text = "Name: " + tbName.Text + "\r\n" +
+                                        "NickName: " + node.SelectSingleNode("NickName").InnerText + "\r\n" +
+                                        "Address: " + node.SelectSingleNode("Address").InnerText + "\r\n" +
+                                        "Cell Phone: " + node.SelectSingleNode("CellPhone").InnerText + "\r\n" +
+                                        "Home Phone: " + node.SelectSingleNode("HomePhone").InnerText + "\r\n" +
+                                        "Email: " + node.SelectSingleNode("Email").InnerText + "\r\n" +
+                                        "Website: " + node.SelectSingleNode("Website").InnerText + "\r\n" +
+                                        "Facebook: " + node.SelectSingleNode("Facebook").InnerText + "\r\n" +
+                                        "Twitter: " + node.SelectSingleNode("Twitter").InnerText + "\r\n" +
+                                        "LinkedIn: " + node.SelectSingleNode("LinkedIn").InnerText + "\r\n" ;
                     }
-                }
-
-
-                if (nameExist == false)
-                {
-                    MessageBox.Show("This name is not found");
-                }
-                else
-                {
-
-                    string password = string.Empty;
-                    foreach (XmlNode node in nodeList)
+                    else if (tbCellPhone.Text != null && node.SelectSingleNode("CellPhone").InnerText == tbCellPhone.Text)
                     {
-                        name = node.InnerText;
-                        if(name == tbName.Text)
-                            tbResult.Text = name;
-
+                        cellPhoneExist = true;
+                        tbResult.Text = "Name: " + node.SelectSingleNode("Name").InnerText + "\r\n" +
+                                        "NickName: " + node.SelectSingleNode("NickName").InnerText + "\r\n" +
+                                        "Address: " + node.SelectSingleNode("Address").InnerText + "\r\n" +
+                                        "Cell Phone: " + tbCellPhone.Text + "\r\n" +
+                                        "Home Phone: " + node.SelectSingleNode("HomePhone").InnerText + "\r\n" +
+                                        "Email: " + node.SelectSingleNode("Email").InnerText + "\r\n" +
+                                        "Website: " + node.SelectSingleNode("Website").InnerText + "\r\n" +
+                                        "Facebook: " + node.SelectSingleNode("Facebook").InnerText + "\r\n" +
+                                        "Twitter: " + node.SelectSingleNode("Twitter").InnerText + "\r\n" +
+                                        "LinkedIn: " + node.SelectSingleNode("LinkedIn").InnerText + "\r\n";
                     }
+
                 }
-                XmlNodeList nodeList2 = xmldoc.GetElementsByTagName("Cell Phone");
-                
-                foreach (XmlNode node in nodeList2)
+
+                if (nameExist == false && cellPhoneExist == false)
                 {
-                    cellPhone = node.InnerText;
-                    if (cellPhone == tbCellPhone.Text) nameExist = true;
-
+                    MessageBox.Show("This contact is not found");
                 }
-
             }
             else
-                MessageBox.Show("This name is not found");
+                MessageBox.Show("This contact is not found");
         }
     }
 }

@@ -32,16 +32,6 @@ namespace MyContacts
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbcellPhone = new System.Windows.Forms.Label();
-            this.lbHomePhone = new System.Windows.Forms.Label();
-            this.fbEmail = new System.Windows.Forms.Label();
-            this.lbWebsite = new System.Windows.Forms.Label();
-            this.lbFacebook = new System.Windows.Forms.Label();
-            this.lbTwitter = new System.Windows.Forms.Label();
-            this.lbLinked = new System.Windows.Forms.Label();
-            this.lbAddress = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbNickName = new System.Windows.Forms.TextBox();
             this.tbHomePhone = new System.Windows.Forms.TextBox();
@@ -54,206 +44,97 @@ namespace MyContacts
             this.tbAddress = new System.Windows.Forms.RichTextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 45);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nick Name";
-            // 
-            // lbcellPhone
-            // 
-            this.lbcellPhone.AutoSize = true;
-            this.lbcellPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcellPhone.Location = new System.Drawing.Point(4, 135);
-            this.lbcellPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbcellPhone.Name = "lbcellPhone";
-            this.lbcellPhone.Size = new System.Drawing.Size(132, 29);
-            this.lbcellPhone.TabIndex = 2;
-            this.lbcellPhone.Text = "Cell Phone";
-            // 
-            // lbHomePhone
-            // 
-            this.lbHomePhone.AutoSize = true;
-            this.lbHomePhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHomePhone.Location = new System.Drawing.Point(4, 180);
-            this.lbHomePhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbHomePhone.Name = "lbHomePhone";
-            this.lbHomePhone.Size = new System.Drawing.Size(154, 29);
-            this.lbHomePhone.TabIndex = 3;
-            this.lbHomePhone.Text = "Home Phone";
-            // 
-            // fbEmail
-            // 
-            this.fbEmail.AutoSize = true;
-            this.fbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fbEmail.Location = new System.Drawing.Point(4, 225);
-            this.fbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.fbEmail.Name = "fbEmail";
-            this.fbEmail.Size = new System.Drawing.Size(74, 29);
-            this.fbEmail.TabIndex = 4;
-            this.fbEmail.Text = "Email";
-            // 
-            // lbWebsite
-            // 
-            this.lbWebsite.AutoSize = true;
-            this.lbWebsite.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWebsite.Location = new System.Drawing.Point(4, 270);
-            this.lbWebsite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbWebsite.Name = "lbWebsite";
-            this.lbWebsite.Size = new System.Drawing.Size(101, 29);
-            this.lbWebsite.TabIndex = 5;
-            this.lbWebsite.Text = "Website";
-            // 
-            // lbFacebook
-            // 
-            this.lbFacebook.AutoSize = true;
-            this.lbFacebook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFacebook.Location = new System.Drawing.Point(4, 315);
-            this.lbFacebook.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbFacebook.Name = "lbFacebook";
-            this.lbFacebook.Size = new System.Drawing.Size(121, 29);
-            this.lbFacebook.TabIndex = 6;
-            this.lbFacebook.Text = "Facebook";
-            // 
-            // lbTwitter
-            // 
-            this.lbTwitter.AutoSize = true;
-            this.lbTwitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTwitter.Location = new System.Drawing.Point(4, 360);
-            this.lbTwitter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbTwitter.Name = "lbTwitter";
-            this.lbTwitter.Size = new System.Drawing.Size(137, 29);
-            this.lbTwitter.TabIndex = 7;
-            this.lbTwitter.Text = "Twitter Link";
-            // 
-            // lbLinked
-            // 
-            this.lbLinked.AutoSize = true;
-            this.lbLinked.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLinked.Location = new System.Drawing.Point(4, 405);
-            this.lbLinked.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbLinked.Name = "lbLinked";
-            this.lbLinked.Size = new System.Drawing.Size(154, 29);
-            this.lbLinked.TabIndex = 8;
-            this.lbLinked.Text = "Linkedin Link";
-            // 
-            // lbAddress
-            // 
-            this.lbAddress.AutoSize = true;
-            this.lbAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAddress.Location = new System.Drawing.Point(4, 90);
-            this.lbAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(102, 29);
-            this.lbAddress.TabIndex = 9;
-            this.lbAddress.Text = "Address";
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(206, 4);
-            this.tbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbName.Location = new System.Drawing.Point(3, 3);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(748, 22);
+            this.tbName.Size = new System.Drawing.Size(562, 20);
             this.tbName.TabIndex = 10;
             // 
             // tbNickName
             // 
-            this.tbNickName.Location = new System.Drawing.Point(206, 49);
-            this.tbNickName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNickName.Location = new System.Drawing.Point(3, 40);
             this.tbNickName.Name = "tbNickName";
-            this.tbNickName.Size = new System.Drawing.Size(748, 22);
+            this.tbNickName.Size = new System.Drawing.Size(562, 20);
             this.tbNickName.TabIndex = 11;
             // 
             // tbHomePhone
             // 
-            this.tbHomePhone.Location = new System.Drawing.Point(206, 184);
-            this.tbHomePhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbHomePhone.Location = new System.Drawing.Point(3, 151);
             this.tbHomePhone.Name = "tbHomePhone";
-            this.tbHomePhone.Size = new System.Drawing.Size(748, 22);
+            this.tbHomePhone.Size = new System.Drawing.Size(562, 20);
             this.tbHomePhone.TabIndex = 13;
             // 
             // tbCellPhone
             // 
-            this.tbCellPhone.Location = new System.Drawing.Point(206, 139);
-            this.tbCellPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCellPhone.Location = new System.Drawing.Point(3, 114);
             this.tbCellPhone.Name = "tbCellPhone";
-            this.tbCellPhone.Size = new System.Drawing.Size(748, 22);
+            this.tbCellPhone.Size = new System.Drawing.Size(567, 20);
             this.tbCellPhone.TabIndex = 14;
             // 
             // tbWebsite
             // 
-            this.tbWebsite.Location = new System.Drawing.Point(206, 274);
-            this.tbWebsite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbWebsite.Location = new System.Drawing.Point(3, 225);
             this.tbWebsite.Name = "tbWebsite";
-            this.tbWebsite.Size = new System.Drawing.Size(748, 22);
+            this.tbWebsite.Size = new System.Drawing.Size(562, 20);
             this.tbWebsite.TabIndex = 15;
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(206, 229);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmail.Location = new System.Drawing.Point(3, 188);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(748, 22);
+            this.tbEmail.Size = new System.Drawing.Size(562, 20);
             this.tbEmail.TabIndex = 16;
             // 
             // tbLinked
             // 
-            this.tbLinked.Location = new System.Drawing.Point(206, 409);
-            this.tbLinked.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbLinked.Location = new System.Drawing.Point(3, 336);
             this.tbLinked.Name = "tbLinked";
-            this.tbLinked.Size = new System.Drawing.Size(748, 22);
+            this.tbLinked.Size = new System.Drawing.Size(562, 20);
             this.tbLinked.TabIndex = 17;
             // 
             // tbTwitter
             // 
-            this.tbTwitter.Location = new System.Drawing.Point(206, 364);
-            this.tbTwitter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTwitter.Location = new System.Drawing.Point(3, 299);
             this.tbTwitter.Name = "tbTwitter";
-            this.tbTwitter.Size = new System.Drawing.Size(748, 22);
+            this.tbTwitter.Size = new System.Drawing.Size(562, 20);
             this.tbTwitter.TabIndex = 18;
             // 
             // tbFacebook
             // 
-            this.tbFacebook.Location = new System.Drawing.Point(206, 319);
-            this.tbFacebook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbFacebook.Location = new System.Drawing.Point(3, 262);
             this.tbFacebook.Name = "tbFacebook";
-            this.tbFacebook.Size = new System.Drawing.Size(748, 22);
+            this.tbFacebook.Size = new System.Drawing.Size(562, 20);
             this.tbFacebook.TabIndex = 19;
             // 
             // tbAddress
             // 
-            this.tbAddress.Location = new System.Drawing.Point(206, 94);
-            this.tbAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbAddress.Location = new System.Drawing.Point(3, 77);
             this.tbAddress.Name = "tbAddress";
-            this.tbAddress.Size = new System.Drawing.Size(748, 36);
+            this.tbAddress.Size = new System.Drawing.Size(562, 30);
             this.tbAddress.TabIndex = 20;
             this.tbAddress.Text = "";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(251, 516);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Location = new System.Drawing.Point(188, 419);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 28);
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "Add Contact";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -264,31 +145,22 @@ namespace MyContacts
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.Controls.Add(this.tbLinked, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.lbLinked, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.lbAddress, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lbTwitter, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.tbTwitter, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.lbFacebook, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.lbWebsite, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.tbFacebook, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.fbEmail, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lbHomePhone, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.tbWebsite, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.lbcellPhone, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.tbEmail, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.tbHomePhone, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tbName, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tbNickName, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.tbAddress, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.tbCellPhone, 1, 3);
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.tbLinked, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.tbTwitter, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.tbFacebook, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.tbWebsite, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.tbEmail, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.tbHomePhone, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.tbName, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbNickName, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.tbAddress, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.tbCellPhone, 0, 3);
             this.tableLayoutPanel2.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(45, 52);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(211, 42);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tableLayoutPanel2.RowCount = 10;
@@ -302,39 +174,160 @@ namespace MyContacts
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1000, 457);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(573, 371);
             this.tableLayoutPanel2.TabIndex = 23;
-
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label12, 0, 6);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(47, 42);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(141, 377);
+            this.tableLayoutPanel1.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(77, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 24);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Name";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(35, 37);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 24);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Nick Name";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(58, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 24);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Address";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(35, 111);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 24);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Cell Phone";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(18, 333);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 24);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Linkedin Link";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(15, 148);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 24);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Home Phone";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(34, 296);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 24);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Twitter Link";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(81, 185);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 24);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Email";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(43, 259);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 24);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Facebook";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(60, 222);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(78, 24);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Website";
             // 
             // AddNewContactForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1109, 578);
+            this.ClientSize = new System.Drawing.Size(832, 470);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.btnAdd);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddNewContactForm";
             this.Text = "AddNewContactForm";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbcellPhone;
-        private System.Windows.Forms.Label lbHomePhone;
-        private System.Windows.Forms.Label fbEmail;
-        private System.Windows.Forms.Label lbWebsite;
-        private System.Windows.Forms.Label lbFacebook;
-        private System.Windows.Forms.Label lbTwitter;
-        private System.Windows.Forms.Label lbLinked;
-        private System.Windows.Forms.Label lbAddress;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.TextBox tbNickName;
         private System.Windows.Forms.TextBox tbHomePhone;
@@ -347,5 +340,16 @@ namespace MyContacts
         private System.Windows.Forms.RichTextBox tbAddress;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
     }
 }

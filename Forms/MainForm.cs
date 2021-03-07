@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyContacts.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace MyContacts
         public MainForm()
         {
             InitializeComponent();
+      
             AllContactForm allContactForm = new AllContactForm()
             {
                 Dock = DockStyle.Fill,
@@ -24,6 +26,12 @@ namespace MyContacts
             allContactForm.FormBorderStyle = (FormBorderStyle)0;
             this.MainPanel.Controls.Add(allContactForm);
             allContactForm.Show();
+        }
+
+        private void ContactDetailForm_Load(object sender, EventArgs e)
+        {
+            ContactDetails contact = new ContactDetails(this);
+
         }
 
         private void btn_AllContact_Click(object sender, EventArgs e)

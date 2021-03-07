@@ -37,33 +37,31 @@ namespace MyContacts
             // dataGridViewAllContact
             // 
             this.dataGridViewAllContact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAllContact.Location = new System.Drawing.Point(28, 60);
-            this.dataGridViewAllContact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewAllContact.Location = new System.Drawing.Point(21, 49);
             this.dataGridViewAllContact.Name = "dataGridViewAllContact";
-            this.dataGridViewAllContact.Size = new System.Drawing.Size(1000, 479);
+            this.dataGridViewAllContact.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewAllContact.Size = new System.Drawing.Size(750, 389);
             this.dataGridViewAllContact.TabIndex = 0;
-            this.dataGridViewAllContact.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAllContact_CellContentClick);
+              this.dataGridViewAllContact.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridViewAllContact_MouseDoubleClick);
             // 
             // lbAllContacts
             // 
             this.lbAllContacts.AutoSize = true;
             this.lbAllContacts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAllContacts.Location = new System.Drawing.Point(471, 16);
-            this.lbAllContacts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbAllContacts.Location = new System.Drawing.Point(353, 13);
             this.lbAllContacts.Name = "lbAllContacts";
-            this.lbAllContacts.Size = new System.Drawing.Size(160, 31);
+            this.lbAllContacts.Size = new System.Drawing.Size(127, 25);
             this.lbAllContacts.TabIndex = 1;
             this.lbAllContacts.Text = "All Contacts";
             // 
             // AllContactForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbAllContacts);
             this.Controls.Add(this.dataGridViewAllContact);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AllContactForm";
             this.Text = "AllContactForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllContact)).EndInit();
