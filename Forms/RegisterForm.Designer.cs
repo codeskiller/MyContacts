@@ -40,30 +40,36 @@
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
-            this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsername.Location = new System.Drawing.Point(144, 85);
+            this.lbUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbUsername.Location = new System.Drawing.Point(109, 83);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(86, 20);
+            this.lbUsername.Size = new System.Drawing.Size(102, 25);
             this.lbUsername.TabIndex = 0;
             this.lbUsername.Text = "Username";
             // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPassword.Location = new System.Drawing.Point(144, 157);
+            this.lbPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbPassword.Location = new System.Drawing.Point(109, 155);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(83, 20);
+            this.lbPassword.Size = new System.Drawing.Size(98, 25);
             this.lbPassword.TabIndex = 1;
             this.lbPassword.Text = "Password";
             // 
             // lbConfirmPass
             // 
             this.lbConfirmPass.AutoSize = true;
-            this.lbConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbConfirmPass.Location = new System.Drawing.Point(144, 234);
+            this.lbConfirmPass.BackColor = System.Drawing.Color.Transparent;
+            this.lbConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConfirmPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbConfirmPass.Location = new System.Drawing.Point(109, 232);
             this.lbConfirmPass.Name = "lbConfirmPass";
-            this.lbConfirmPass.Size = new System.Drawing.Size(147, 20);
+            this.lbConfirmPass.Size = new System.Drawing.Size(171, 25);
             this.lbConfirmPass.TabIndex = 2;
             this.lbConfirmPass.Text = "Confirm Password";
             // 
@@ -71,7 +77,7 @@
             // 
             this.tbUsername.Location = new System.Drawing.Point(302, 83);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(290, 22);
+            this.tbUsername.Size = new System.Drawing.Size(386, 22);
             this.tbUsername.TabIndex = 3;
             // 
             // tbPassword
@@ -79,7 +85,7 @@
             this.tbPassword.Location = new System.Drawing.Point(302, 155);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(290, 22);
+            this.tbPassword.Size = new System.Drawing.Size(386, 22);
             this.tbPassword.TabIndex = 4;
             // 
             // tbConfirmPassword
@@ -87,17 +93,20 @@
             this.tbConfirmPassword.Location = new System.Drawing.Point(302, 232);
             this.tbConfirmPassword.Name = "tbConfirmPassword";
             this.tbConfirmPassword.PasswordChar = '*';
-            this.tbConfirmPassword.Size = new System.Drawing.Size(290, 22);
+            this.tbConfirmPassword.Size = new System.Drawing.Size(386, 22);
             this.tbConfirmPassword.TabIndex = 5;
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(348, 314);
+            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCreate.Location = new System.Drawing.Point(302, 314);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(151, 53);
+            this.btnCreate.Size = new System.Drawing.Size(181, 53);
             this.btnCreate.TabIndex = 6;
             this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // Register
