@@ -66,6 +66,7 @@ namespace MyContacts.Forms
                         users.Id += 1;
                         users.Username = tbUsername.Text;
                         users.Password = EncodePassword.EncodePasswordToBase64(tbPassword.Text);
+                        users.Status = "Enable";
                         try
                         {
                             ls.Add(users);

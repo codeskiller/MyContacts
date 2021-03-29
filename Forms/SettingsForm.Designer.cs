@@ -32,13 +32,11 @@ namespace MyContacts
             this.lbContactBookSettings = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbUserName = new System.Windows.Forms.Label();
-            this.lbAccountEmail = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
             this.rbtnDisableAccount = new System.Windows.Forms.RadioButton();
             this.rbtnEnableAccount = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -70,19 +68,10 @@ namespace MyContacts
             this.lbUserName.TabIndex = 2;
             this.lbUserName.Text = "UserName";
             // 
-            // lbAccountEmail
-            // 
-            this.lbAccountEmail.AutoSize = true;
-            this.lbAccountEmail.Location = new System.Drawing.Point(79, 189);
-            this.lbAccountEmail.Name = "lbAccountEmail";
-            this.lbAccountEmail.Size = new System.Drawing.Size(75, 13);
-            this.lbAccountEmail.TabIndex = 3;
-            this.lbAccountEmail.Text = "Account Email";
-            // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(101, 237);
+            this.lbPassword.Location = new System.Drawing.Point(111, 195);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(53, 13);
             this.lbPassword.TabIndex = 4;
@@ -98,6 +87,7 @@ namespace MyContacts
             this.rbtnDisableAccount.TabStop = true;
             this.rbtnDisableAccount.Text = "Disable Accounts";
             this.rbtnDisableAccount.UseVisualStyleBackColor = true;
+            this.rbtnDisableAccount.CheckedChanged += new System.EventHandler(this.rbtnDisableAccount_CheckedChanged);
             // 
             // rbtnEnableAccount
             // 
@@ -109,51 +99,44 @@ namespace MyContacts
             this.rbtnEnableAccount.TabStop = true;
             this.rbtnEnableAccount.Text = "Enable Accounts";
             this.rbtnEnableAccount.UseVisualStyleBackColor = true;
+            this.rbtnEnableAccount.CheckedChanged += new System.EventHandler(this.rbtnEnableAccount_CheckedChanged);
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(223, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(493, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtUserName.Location = new System.Drawing.Point(223, 134);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(493, 20);
+            this.txtUserName.TabIndex = 7;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(223, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(493, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(223, 230);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(493, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtPassword.Location = new System.Drawing.Point(223, 188);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(493, 20);
+            this.txtPassword.TabIndex = 9;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(223, 292);
+            this.btnUpdate.Location = new System.Drawing.Point(223, 234);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(153, 35);
             this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "Update Settings";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(757, 336);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.rbtnEnableAccount);
             this.Controls.Add(this.rbtnDisableAccount);
             this.Controls.Add(this.lbPassword);
-            this.Controls.Add(this.lbAccountEmail);
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbContactBookSettings);
@@ -169,13 +152,11 @@ namespace MyContacts
         private System.Windows.Forms.Label lbContactBookSettings;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbUserName;
-        private System.Windows.Forms.Label lbAccountEmail;
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.RadioButton rbtnDisableAccount;
         private System.Windows.Forms.RadioButton rbtnEnableAccount;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnUpdate;
     }
 }

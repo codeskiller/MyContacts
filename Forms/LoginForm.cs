@@ -80,12 +80,30 @@ namespace MyContacts.Forms
                         if (password == EncodePassword.EncodePasswordToBase64(tbPassword.Text)) passwordExist = true;
 
                     }
+
                     if (passwordExist == true)
                     {
-                        //create new thread to start main form and close login form
-                        var t = new Thread(() => Application.Run(new MainForm()));
-                        t.Start();
-                        this.Close();
+                        XmlDocument doc = new XmlDocument();
+                        doc.Load("Users.xml");
+                        XmlElement root = doc.DocumentElement;
+                        XmlNodeList name = root.SelectNodes("//Users");
+                        foreach (XmlNode node in name)
+                        {
+                            if (node.SelectSingleNode("Username").InnerText == tbUsername.Text)
+                            {
+                                if (node.SelectSingleNode("Status").InnerText == "Enable")
+                                {
+                                    //create new thread to start main form and close login form
+                                    var t = new Thread(() => Application.Run(new MainForm()));
+                                    t.Start();
+                                    this.Close();
+                                }
+                                else if (node.SelectSingleNode("Status").InnerText == "Disable")
+                                {
+                                    MessageBox.Show("Your account is disabled!");
+                                }
+                            }
+                        }
                     }
                     else
                         MessageBox.Show("Your password or username doesn't match");
